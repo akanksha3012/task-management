@@ -10,7 +10,7 @@
 <!-- font awesome icons -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body style="background-color: #ebf3ff;">
+<body style="background-color: #ebf3ff;" onload="loadExistingCards()">
   <!-- Modal -->
 <div class="modal fade" id="newTask" tabindex="-1" aria-labelledby="newTaskLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -26,18 +26,18 @@
           
         </div>
         <div class="mb-3">
-          <label for="TaskTitle" class="form-label">Task Title</label>
-          <input type="text" class="form-control" id="TaskTitle" placeholder="Web Development"/>
+          <label for="taskTitle" class="form-label">Task Title</label>
+          <input type="text" class="form-control" id="taskTitle" placeholder="Web Development"/>
           
         </div>
         <div class="mb-3">
-          <label for="TaskType" class="form-label">Task Type</label>
-          <input type="text" class="form-control" id="TaskType" placeholder="practice" />
+          <label for="taskType" class="form-label">Task Type</label>
+          <input type="text" class="form-control" id="taskType" placeholder="practice" />
           
         </div>
         <div class="mb-3">
-          <label for="TaskDescription" class="form-label">Task Type</label>
-         <textarea id="TaskDescription" rows="4" class="form-control" placeholder="This is DOM-Manipulation class."></textarea>
+          <label for="taskDescription" class="form-label">Task Type</label>
+         <textarea id="taskDescription" rows="4" class="form-control" placeholder="This is DOM-Manipulation class."></textarea>
           
         </div>
       </div>
